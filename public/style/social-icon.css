@@ -9,6 +9,7 @@
     background-color: var(--icon-color);
     box-shadow: 0 4px 4px #0004;
     transition: 0.5s;
+    color: var(--primary-color);
 }
 
 .social-icon:hover{

@@ -1,8 +1,8 @@
 .login-container{
     position: relative;
-    height: 480px;
-    width: 768px;
-    border-radius: 12px;
+    height: 580px;
+    width: 868px;
+    border-radius: none;
     box-shadow: 0 5px 20px #A0A0A0;
     overflow: hidden;
 }
