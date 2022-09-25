@@ -1,16 +1,16 @@
-'use strict'
 
-const loginContainer = document.getElementById('login-container')
+// document.getElementById('login-verify').addEventListener('click', verification())
 
-const moveOverlay = () => loginContainer.classList.toggle('move')
-/*
-const moveOverlay = () => loginContainer.classList.add('move')
-const moveOverlay = () => loginContainer.classList.remove('move')
-toggle alterna entre add e remove
-*/ 
 
-document.getElementById('open-register').addEventListener('click', moveOverlay)
-document.getElementById('open-login').addEventListener('click', moveOverlay)
-document.getElementById('open-register-mobile').addEventListener('click', moveOverlay)
-document.getElementById('open-login-mobile').addEventListener('click', moveOverlay)
-document.getElementById('open-login-mobile').addEventListener('click', moveOverlay)
+function verification() {
+    const username = document.querySelector('#email-user').value;
+    const password = document.querySelector('#password-user').value;
+
+    if (username == 'admin@admin' && password == 'admin') {
+        localStorage.setItem("acesso", true);
+        alert("Welcome");
+        window.location.href = "https://github.com/nathanfdias";
+    } else {
+        alert('Please enter a valid username and password')
+    }
+}

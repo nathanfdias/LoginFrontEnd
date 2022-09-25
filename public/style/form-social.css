@@ -4,7 +4,9 @@
 }
 
 .form-text {
+    display: flex;
     color: var(--text-color-light);
+    font-size: 18px;
 }
 
 .form-link {
